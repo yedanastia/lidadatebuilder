@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lida's Date Experience!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8bbd0; /* Soft baby pink */
+            color: #333;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .options {
+            margin-bottom: 20px;
+        }
+        .options label {
+            margin-right: 10px;
+        }
+        button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #fff;
+            color: #333;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        button:hover {
+            background-color: #e1b5b5; /* Light pink for hover effect */
+        }
+        .result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Activity Options</h1>
+    <div class="options">
+        <div>
+            <strong>Indoor or Outdoor?</strong>
+            <button onclick="setChoice('indoorOutdoor', 'Indoors')">Indoors</button>
+            <button onclick="setChoice('indoorOutdoor', 'Outdoors')">Outdoors</button>
+        </div>
+        <div>
+            <strong>Fun or Relaxing?</strong>
+            <button onclick="setChoice('funRelaxing', 'Fun')">Fun</button>
+            <button onclick="setChoice('funRelaxing', 'Relaxing')">Relaxing</button>
+        </div>
+        <div>
+            <strong>Creative or Experiential?</strong>
+            <button onclick="setChoice('creativeExperiential', 'Creative')">Creative</button>
+            <button onclick="setChoice('creativeExperiential', 'Experiential')">Experiential</button>
+        </div>
+    </div>
+
+    <h1>Food Options</h1>
+    <div class="options">
+        <div>
+            <strong>Indoor or Outdoor Food?</strong>
+            <button onclick="setChoice('foodIndoorsOutdoors', 'Indoors')">Indoors</button>
+            <button onclick="setChoice('foodIndoorsOutdoors', 'Outdoors')">Outdoors</button>
+        </div>
+        <div>
+            <strong>Hot or Cold?</strong>
+            <button onclick="setChoice('foodHotCold', 'Hot')">Hot</button>
+            <button onclick="setChoice('foodHotCold', 'Cold')">Cold</button>
+        </div>
+        <div>
+            <strong>English or Italian?</strong>
+            <button onclick="setChoice('foodEnglishItalian', 'English')">English</button>
+            <button onclick="setChoice('foodEnglishItalian', 'Italian')">Italian</button>
+        </div>
+        <div>
+            <strong>Casual or Fancy?</strong>
+            <button onclick="setChoice('foodCasualFancy', 'Casual')">Casual</button>
+            <button onclick="setChoice('foodCasualFancy', 'Fancy')">Fancy</button>
+        </div>
+    </div>
+
+    <h1>Watch Options</h1>
+    <div class="options">
+        <div>
+            <strong>Drama or Sci-Fi?</strong>
+            <button onclick="setChoice('dramaSciFi', 'Drama')">Drama</button>
+            <button onclick="setChoice('dramaSciFi', 'Sci-Fi')">Sci-Fi</button>
+        </div>
+        <div>
+            <strong>Netflix or Disney?</strong>
+            <button onclick="setChoice('netflixDisney', 'Netflix')">Netflix</button>
+            <button onclick="setChoice('netflixDisney', 'Disney')">Disney</button>
+        </div>
+        <div>
+            <strong>Story Driven or Character Driven?</strong>
+            <button onclick="setChoice('storyCharacter', 'Story Driven')">Story Driven</button>
+            <button onclick="setChoice('storyCharacter', 'Character Driven')">Character Driven</button>
+        </div>
+    </div>
+
+    <h2>Results</h2>
+    <div class="result">
+        <h3>Activity Result:</h3>
+        <div id="activityResult">Please select all options</div>
+    </div>
+    <div class="result">
+        <h3>Food Result:</h3>
+        <div id="foodResult">Please select all options</div>
+    </div>
+    <div class="result">
+        <h3>Watch Result:</h3>
+        <div id="watchResult">Please select all options</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
